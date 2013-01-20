@@ -1,0 +1,44 @@
+{
+	"name":"BIG PROJECT",
+	"logo":"http://i1.au.reastatic.net/160x30/17b55bfdca419db0f6d674be983c174aca851b1fbf60ae710ed7c27ed4370976/medium_logo1.jpg",
+	"developer":"Meriton",
+	"description":"<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href='#'>Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p><h2>Header Level 2</h2><ol><li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li><li>Aliquam tincidunt mauris eu risus.</li></ol>",
+	"photos":[
+		"http://www.kyrielles.net/sliderkit/lib/images/photos/sample-01.jpg",
+		"http://www.kyrielles.net/sliderkit/lib/images/photos/sample-02.jpg",
+		"http://www.kyrielles.net/sliderkit/lib/images/photos/sample-03.jpg",
+		"http://www.kyrielles.net/sliderkit/lib/images/photos/sample-04.jpg",
+		"http://www.kyrielles.net/sliderkit/lib/images/photos/sample-05.jpg",
+		"http://www.kyrielles.net/sliderkit/lib/images/photos/sample-06.jpg"
+	],
+	"floorplans":[
+		{
+			"id":1,
+			"thumb":"http://photonet.hotpads.com/search/modelLayout/BDX/63778/972357/698805000_squareThumb.jpg",
+			"area": "80sqm",
+			"level":"1",
+			"orientation":"North"
+		},
+		{
+			"id":2,
+			"thumb":"http://photonet.hotpads.com/search/modelLayout/BDX/63778/972357/698805000_squareThumb.jpg",
+			"area": "100sqm",
+			"level":"3",
+			"orientation":"West"
+		},
+		{
+			"id":3,
+			"thumb":"http://photonet.hotpads.com/search/modelLayout/HotPads/635526/724108/959617854_squareThumb.jpg",
+			"area": "90sqm",
+			"level":"5",
+			"orientation":"East"
+		}
+	],
+	"features":"<ul><li>Modern open plan layout with eat-in kitchen</li><li>Gourmet kitchen includes: European stainless steel appliances with oven, gas cooktop, microwave, integrated dishwasher, coloured glass splashback, soft-closing drawers and Caesarstone benchtops</li><li>Luxurious bathrooms with floor-to-ceiling tiles, the latest in wall hung toilet and basin suites, frameless shower screens and some apartments feature freestanding bathtubs from ‘Caroma’</li><li>Bathrooms and ensuite also feature large shaving cabinet with mirrors</li><li>Internal laundry include floor to ceiling tiles, dryer, sink & cabinet</li><li>All bedrooms with built in wardrobes</li></ul>",
+	"finish":"<ul><li>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</li></ul>",
+	"amenity":"<ul><li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li><li>Aliquam tincidunt mauris eu risus.</li><li>Vestibulum auctor dapibus neque.</li></ul>",
+	"data":"<ul><li>Modern open plan layout with eat-in kitchen</li><li>Gourmet kitchen includes: European stainless steel appliances with oven, gas cooktop, microwave, integrated dishwasher, coloured glass splashback, soft-closing drawers and Caesarstone benchtops</li><li>Luxurious bathrooms with floor-to-ceiling tiles, the latest in wall hung toilet and basin suites, frameless shower screens and some apartments feature freestanding bathtubs from ‘Caroma’</li><li>Bathrooms and ensuite also feature large shaving cabinet with mirrors</li><li>Internal laundry include floor to ceiling tiles, dryer, sink & cabinet</li><li>All bedrooms with built in wardrobes</li></ul>",
+	"condition":"<ul><li>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</li></ul>",
+	"offers":"<ul><li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li><li>Aliquam tincidunt mauris eu risus.</li><li>Vestibulum auctor dapibus neque.</li></ul>"
+
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>BeFun Real Estate</title>
+        <meta name="description" content="">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/sliderkit-core.css" />
+        <link rel="stylesheet" href="css/sliderkit-demos.css"/>
+        <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.9.2.custom.min.css"/>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <header>
+        	<div class="inner">
+        		<div class="top">
+		        	<div class="logo">BeFun</div>
+		        	<div class="search">
+		        		<input type="text" name="suburb" id="searchSuburb"/>
+		        		<input type="button" id="btn-filter" value="Filter"/>
+		        		<input type="button" id="btn-search" value="Search"/>
+		        	</div>
+		        	<div id="filter">
+		        		<label>Price Range:</label>
+		        		<select name="pricerange">
+		        			<option value="">Any Price</option>
+		        			<option value="1">350,000 - 450,000</option>
+		        			<option value="2">450,000 - 550,000</option>
+		        			<option value="3">550,000 - 650,000</option>
+		        			<option value="4">650,000 - 750,000</option>
+		        			<option value="5">750,000 +</option>
+		        		</select><br/>
+		        		<label>Property Type:</label>
+		        		<input type="radio" value="1" name="propertytype" checked="checked" data-name="Apartment"/> Apartment
+		        		<input type="radio" value="2" name="propertytype" data-name="Townhouse"/> Townhouse
+		        		<input type="radio" value="3" name="propertytype" data-name="House"/> House
+		        		<input type="radio" value="4" name="propertytype" data-name="Penthhouse"/> Penthhouse <br/>
+		        		<div id="apartment-filter">
+			        		<label>Bedrooms</label>
+			        		<input type="checkbox" value="1" name="bedrooms"/> 1
+			        		<input type="checkbox" value="2" name="bedrooms"/> 2
+			        		<input type="checkbox" value="3" name="bedrooms"/> 3
+			        		<input type="checkbox" value="3+" name="bedrooms"/> 3+<br/>
+			        		<label>Bathrooms</label>
+			        		<input type="checkbox" value="1" name="bathrooms"/> 1
+			        		<input type="checkbox" value="2" name="bathrooms"/> 2
+			        		<input type="checkbox" value="2+" name="bathrooms"/> 2+<br/>
+			        		<label>Carspace</label>
+			        		<input type="checkbox" value="1" name="carspace"/> 1
+			        		<input type="checkbox" value="2" name="carspace"/> 2
+			        		<input type="checkbox" value="2+" name="carspace"/> 2+<br/>
+		        		</div>
+		        		<label>Distance to City</label>
+		        		<select name="distancetocity">
+		        			<option value="">Select</option>
+		        			<option value="10">10km</option>
+		        			<option value="20">20km</option>
+		        			<option value="30">30km</option>
+		        			<option value="40">40km</option>
+		        			<option value="40+">40km+</option>
+		        		</select><br/>
+		        		<input type="button" id="btn-search2" value="Search" />
+		        	</div>
+	        	</div>
+	        	<div id="reminder">
+        			<em>Current Search Condition: </em><div id="reminder-nodes"></div>
+        	</div>
+        </header>
+        <div id="content">
+        	<div id="main">
+        		<div id="toolbar">
+		        	<div class="buttons">
+		        		<a href="#" id="toggle-schools" class="show">Show schools</a> |
+		        		<a href="#" id="toggle-shops" class="show">Show shops</a> |
+		        		<a href="#" id="toggle-buses" class="show">Show buses</a>
+		        	</div>
+		        </div>
+		        <div id="map">
+        		
+        		</div>
+        		<div id="panel">
+	        		<span class="close">X</span>
+	        		<div class="top">
+	        			<div class="title">
+	        				<span id="project-logo"></span>
+		        			<span id="project-name"></span><br/>
+		        			<span id="project-developer"></span>
+	        			</div>      			
+	        			<div class="tabs">     			
+		        			<a href="#tab-photos">Overview</a> |
+		        			<a href="#tab-details">Details</a> |
+		        			<a href="#tab-floorplans">Floorplans</a> |
+		        			<a href="#tab-sales">Sales Portal</a>
+		        		</div>
+	        		</div>     		
+	        		<div class="content">
+	        			<div id="tab-photos" class="shown">
+
+		        		</div>
+		        		<div id="tab-details" class="hidden">
+		        			<div class="tabs">
+			        			<a href="#subtab-description">Description</a> |
+			        			<a href="#subtab-features">Features</a> |
+			        			<a href="#subtab-finish">Finish Scheme</a> |
+			        			<a href="#subtab-amenity">Amenity</a>
+		        			</div>
+		        			<div id="subtab-description" class="shown">
+		        				
+		        			</div>
+		        			<div id="subtab-features" class="hidden">
+		        				
+		        			</div>
+		        			<div id="subtab-finish" class="hidden">
+		        				
+		        			</div>
+		        			<div id="subtab-amenity" class="hidden">
+		        				
+		        			</div>
+		        		</div>
+		        		<div id="tab-floorplans" class="hidden">
+		        			<div id="floorplan-filter">
+		        				<h3>Filter the floorplans in current project</h3>
+		        				<label>Bedrooms</label>
+				        		<input type="checkbox" value="1" name="bedrooms"/> 1
+				        		<input type="checkbox" value="2" name="bedrooms"/> 2
+				        		<input type="checkbox" value="3" name="bedrooms"/> 3
+				        		<input type="checkbox" value="3+" name="bedrooms"/> 3+<br/>
+				        		<label>Bathrooms</label>
+				        		<input type="checkbox" value="1" name="bathrooms"/> 1
+				        		<input type="checkbox" value="2" name="bathrooms"/> 2
+				        		<input type="checkbox" value="2+" name="bathrooms"/> 2+<br/>
+				        		<label>Carspace</label>
+				        		<input type="checkbox" value="1" name="carspace"/> 1
+				        		<input type="checkbox" value="2" name="carspace"/> 2
+				        		<input type="checkbox" value="2+" name="carspace"/> 2+<br/>
+				        		<label>Price</label>
+				        		<select name="pricerange">
+				        			<option value="">Any Price</option>
+				        			<option value="1">350,000 - 450,000</option>
+				        			<option value="2">450,000 - 550,000</option>
+				        			<option value="3">550,000 - 650,000</option>
+				        			<option value="4">650,000 - 750,000</option>
+				        			<option value="5">750,000 +</option>
+				        		</select>
+				        		<label>Aspect</label>
+				        		<select name="aspect">
+				        			<option value="">Select</option>
+				        			<option value="N">North</option>
+				        			<option value="E">East</option>
+				        			<option value="W">West</option>
+				        			<option value="S">South</option>
+				        		</select><br/>
+				        		<label>Study</label>
+				        		<input type="checkbox" value="Y" name="study"/><br/>
+				        		<label>Enclosed Balcony</label>
+				        		<input type="checkbox" value="Y" name="wintergarden"/>
+				        		<input type="button" value="Submit"/>
+		        			</div>
+		        			<div id="floorplans">
+		        				<h3>Search Results</h3>
+		        				<div id="floorplan-list">
+		        					
+		        				</div>
+		        			</div>
+		        		</div>
+		        		<div id="tab-sales" class="hidden">
+		        			<div class="tabs">
+			        			<a href="#subtab-data">Data</a> |
+			        			<a href="#subtab-condition">Condition of Purchase</a> |
+			        			<a href="#subtab-offers">Special Offers</a>
+		        			</div>
+		        			<div id="subtab-data" class="shown">
+		        				
+		        			</div>
+		        			<div id="subtab-condition" class="hidden">
+		        				
+		        			</div>
+		        			<div id="subtab-offers" class="hidden">
+		        				
+		        			</div>
+		        		</div>
+	        		</div>
+	        	</div>
+        	</div>
+        	<div id="projectlist">
+        		
+        	</div>
+        </div>
+        <div id="lightbox" style="display:none;">
+    		<span class="close">X</span>
+    		<div class="top">
+    			<span>1 Bedrooms 2 Bathrooms</span>
+    			<div class="social">
+    				<a href="#">Send to friend</a> |
+    				<a href="#">Share</a> |
+    				<a href="#">Add to compare list</a> |
+    				<a href="#">View full floorplan </a>
+    			</div>
+    		</div>
+    		<div class="content">
+    			<div class="floorplan">
+    				<img src="http://www.bollingercrestapartments.com/images/floorplan_01.gif" alt=""/>
+    			</div>
+    			<div class="apartments">
+					<div id="unit-101" class="shown">
+						Unit 101<br/>
+						Level: 1<br/>
+						LOT: 101<br/>
+						Price: $550,000<br/>
+						Stage Num: II<br/>
+						Building: D<br/>
+						Color Scheme: Pink
+					</div>
+					<div id="unit-201" class="hidden">
+						Unit 201<br/>
+						Level: 2<br/>
+						LOT: 201<br/>
+						Price: $650,000<br/>
+						Stage Num: II<br/>
+						Building: D<br/>
+						Color Scheme: Green
+					</div>
+					<div id="unit-301" class="hidden">
+						Unit 301<br/>
+						Level: 1<br/>
+						LOT: 301<br/>
+						Price: $750,000<br/>
+						Stage Num: III<br/>
+						Building: C<br/>
+						Color Scheme: Pink
+					</div>
+					<div id="unit-401" class="hidden">
+						Unit 401<br/>
+						Level: 1<br/>
+						LOT: 401<br/>
+						Price: $450,000<br/>
+						Stage Num: I<br/>
+						Building: D<br/>
+						Color Scheme: Pink
+					</div>
+					<div id="unit-501" class="hidden">
+						Unit 501<br/>
+						Level: 1<br/>
+						LOT: 501<br/>
+						Price: $1,050,000<br/>
+						Stage Num: I<br/>
+						Building: C<br/>
+						Color Scheme: Blue
+					</div>
+    			</div>
+    			<ul id="units">
+					<li><a href="#unit-101">101</a></li>
+					<li><a href="#unit-201">201</a></li>
+					<li><a href="#unit-301">301</a></li>
+					<li><a href="#unit-401">401</a></li>
+				</ul>
+    		</div>
+    	</div>
+    	<div id="overlay"></div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery-ui-1.9.2.custom.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>	
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>

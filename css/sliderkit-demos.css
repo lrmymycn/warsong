@@ -1,0 +1,94 @@
+/*
+ *  PHOTOS GALLERIES
+ *  ------------------------------------------------
+ */
+
+/*---------------------------------
+ *  Photos gallery > Standard
+ *---------------------------------*/
+.photosgallery-std{width:500px;height:335px;padding:0 0 76px;}
+
+/* Navbar */
+.photosgallery-std .sliderkit-nav{left:0;bottom:0;width:480px;padding:10px;background:#000;}
+.photosgallery-std .sliderkit-nav-clip ul li{float:left;margin:0;}
+.photosgallery-std .sliderkit-nav-clip ul li a{display:block;width:75px;height:50px;overflow:hidden;margin:0;padding:3px;}
+.photosgallery-std .sliderkit-nav-clip ul li.sliderkit-selected a{padding:0;border:3px solid #fff;}
+
+/* Buttons */
+.photosgallery-std .sliderkit-btn{position:absolute;top:0;}
+.photosgallery-std .sliderkit-btn span{display:none;}
+.photosgallery-std .sliderkit-btn-disable{opacity:0.3/*can be set to any value until 1*/;cursor:default;}
+.photosgallery-std .sliderkit-btn-disable a:hover{cursor:default;}
+
+/* Navbar buttons */
+.photosgallery-std .sliderkit-nav .sliderkit-btn a{display:block;width:15px;height:76px;background:transparent url("../img/gallery/arrows-h.png") no-repeat center 0;}
+.photosgallery-std .sliderkit-nav .sliderkit-nav-prev{left:20px;}
+.photosgallery-std .sliderkit-nav .sliderkit-nav-next{right:20px;}
+.photosgallery-std .sliderkit-nav .sliderkit-nav-prev a{background-position:-89px center;}
+.photosgallery-std .sliderkit-nav .sliderkit-nav-next a{background-position:-108px center;}
+.photosgallery-std .sliderkit-nav .sliderkit-nav-prev a:hover,
+.photosgallery-std .sliderkit-nav .sliderkit-nav-prev a:focus{background-position:-126px center;}
+.photosgallery-std .sliderkit-nav .sliderkit-nav-next a:hover,
+.photosgallery-std .sliderkit-nav .sliderkit-nav-next a:focus{background-position:-145px center;}
+ 
+/* Panels buttons */
+.photosgallery-std .sliderkit-go-btn{position:absolute;top:0;z-index:10;width:50px;height:335px;}
+.photosgallery-std .sliderkit-go-prev{left:0;}
+.photosgallery-std .sliderkit-go-next{right:0;}
+.photosgallery-std .sliderkit-go-btn a{display:block;width:50px;height:335px;opacity:0.6;cursor:pointer;background-color:#fff;background-repeat:no-repeat;background-position:center center;}
+.photosgallery-std .sliderkit-go-prev a{background-image:url("../images/slider-arrow-left.gif");}
+.photosgallery-std .sliderkit-go-next a{background-image:url("../images/slider-arrow-right.gif");}
+.photosgallery-std .sliderkit-btn-disable a{opacity:0/*can be set to any value until 1*/;cursor:default;}
+.photosgallery-std .sliderkit-go-btn span{display:none;}
+
+/* Panel */
+.photosgallery-std .sliderkit-panel{top:0;left:0;width:500px;height:335px;}
+
+/*---------------------------------
+ *  Photos gallery > With captions
+ *---------------------------------*/
+.photosgallery-captions{width:500px;height:335px;padding:0 0 76px;}
+
+/* Navbar */
+.photosgallery-captions .sliderkit-nav{left:0;bottom:0;width:480px;padding:10px;background:#000;}
+.photosgallery-captions .sliderkit-nav-clip ul li{float:left;margin:0;}
+.photosgallery-captions .sliderkit-nav-clip ul li a{display:block;width:75px;height:50px;overflow:hidden;margin:0;padding:3px;}
+.photosgallery-captions .sliderkit-nav-clip ul li.sliderkit-selected a{padding:0;border:3px solid #fff;}
+
+/* Buttons */
+.photosgallery-captions .sliderkit-btn{position:absolute;top:0;}
+.photosgallery-captions .sliderkit-btn a{display:block;height:76px;background:transparent url("../images/arrows-h.png") no-repeat center 0;}
+.photosgallery-captions .sliderkit-btn span{display:none;}
+.photosgallery-captions .sliderkit-btn-disable{opacity:0.3/*can be set to any value until 1*/;}
+.photosgallery-captions .sliderkit-btn-disable a:hover{cursor:default;}
+
+/* Buttons > Navbar buttons */
+.photosgallery-captions .sliderkit-nav-btn{width:15px;}
+.photosgallery-captions .sliderkit-nav .sliderkit-nav-prev{left:15px;}
+.photosgallery-captions .sliderkit-nav .sliderkit-nav-next{right:15px;}
+.photosgallery-captions .sliderkit-nav .sliderkit-nav-prev a{background-position:-89px center;}
+.photosgallery-captions .sliderkit-nav .sliderkit-nav-next a{background-position:-108px center;}
+.photosgallery-captions .sliderkit-nav .sliderkit-nav-prev a:hover,
+.photosgallery-captions .sliderkit-nav .sliderkit-nav-prev a:focus{background-position:-126px center;}
+.photosgallery-captions .sliderkit-nav .sliderkit-nav-next a:hover,
+.photosgallery-captions .sliderkit-nav .sliderkit-nav-next a:focus{background-position:-145px center;}
+
+/* Buttons > Go buttons */
+.photosgallery-captions .sliderkit-go-btn{width:10px;}
+.photosgallery-captions .sliderkit-nav .sliderkit-go-prev{left:40px;}
+.photosgallery-captions .sliderkit-nav .sliderkit-go-next{right:40px;}
+.photosgallery-captions .sliderkit-nav .sliderkit-go-prev a{background-position:0 center;}
+.photosgallery-captions .sliderkit-nav .sliderkit-go-next a{background-position:-20px center;}
+.photosgallery-captions .sliderkit-nav .sliderkit-go-prev a:hover,
+.photosgallery-captions .sliderkit-nav .sliderkit-go-prev a:focus{background-position:-40px center;}
+.photosgallery-captions .sliderkit-nav .sliderkit-go-next a:hover,
+.photosgallery-captions .sliderkit-nav .sliderkit-go-next a:focus{background-position:-60px center;}
+
+/* Panel */
+.photosgallery-captions .sliderkit-panel{top:0;left:0;width:500px;height:335px;}
+
+/* Panel > Textbox */
+.photosgallery-captions .sliderkit-panel .sliderkit-panel-textbox{bottom:0;left:0;width:500px;height:70px;}
+.photosgallery-captions .sliderkit-panel .sliderkit-panel-text{height:50px;padding:10px 15px;font-size:0.9em;color:#fff;}
+.photosgallery-captions .sliderkit-panel .sliderkit-panel-text h4{height:auto;margin:0 0 7px;line-height:1.1em;font-size:1.1em;font-weight:bold;border:none;}
+.photosgallery-captions .sliderkit-panel .sliderkit-panel-overlay{width:500px;height:70px;background:#000;opacity:0.6;}
